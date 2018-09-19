@@ -1,27 +1,35 @@
-# Is Upper Case
+# @compwright/is-upper-case
 
-[![NPM version][npm-image]][npm-url]
-[![NPM downloads][downloads-image]][downloads-url]
 [![Build status][travis-image]][travis-url]
 [![Test coverage][coveralls-image]][coveralls-url]
-[![Greenkeeper badge](https://badges.greenkeeper.io/blakeembrey/is-upper-case.svg)](https://greenkeeper.io/)
 
-Check if a string is upper case.
+Check if a string is uppercase.
 
 ## Installation
 
 ```
-npm install is-upper-case --save
+npm install @compwright/is-upper-case --save
 ```
 
 ## Usage
 
-```js
-var isUpperCase = require('is-upper-case')
+```javascript
+const isUpperCase = require('is-upper-case')
 
-isUpperCase('STRING') //=> true
-isUpperCase('String') //=> false
-isUpperCase('string') //=> false
+isUpperCase('STRING') // true
+isUpperCase('String') // false
+isUpperCase('string') // false
+
+// Returns undefined for non-strings
+isUpperCase(null) // undefined
+```
+
+Locale support:
+
+```javascript
+const isUpperCase = require('is-upper-case')
+
+isUpperCase('STRİNG', 'tr') // true
 ```
 
 ## Typings
@@ -32,11 +40,7 @@ Includes a [TypeScript definition](is-upper-case.d.ts).
 
 MIT
 
-[npm-image]: https://img.shields.io/npm/v/is-upper-case.svg?style=flat
-[npm-url]: https://npmjs.org/package/is-upper-case
-[downloads-image]: https://img.shields.io/npm/dm/is-upper-case.svg?style=flat
-[downloads-url]: https://npmjs.org/package/is-upper-case
-[travis-image]: https://img.shields.io/travis/blakeembrey/is-upper-case.svg?style=flat
-[travis-url]: https://travis-ci.org/blakeembrey/is-upper-case
-[coveralls-image]: https://img.shields.io/coveralls/blakeembrey/is-upper-case.svg?style=flat
-[coveralls-url]: https://coveralls.io/r/blakeembrey/is-upper-case?branch=master
+[travis-image]: https://img.shields.io/travis/compwright/is-upper-case.svg?style=flat
+[travis-url]: https://travis-ci.org/compwright/is-upper-case
+[coveralls-image]: https://img.shields.io/coveralls/compwright/is-upper-case.svg?style=flat
+[coveralls-url]: https://coveralls.io/r/compwright/is-upper-case?branch=master
