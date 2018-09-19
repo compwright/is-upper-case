@@ -16,17 +16,17 @@ describe('isUpperCase()', function () {
     })
 
     it('should return true when the string is upper case', function () {
-      assert.equal(isUpperCase('TEST'), true)
+      assert.strictEqual(isUpperCase('TEST'), true)
     })
 
     it('should return false when the string is mixed case', function () {
-      assert.equal(isUpperCase('test'), false)
-      assert.equal(isUpperCase('Test'), false)
+      assert.strictEqual(isUpperCase('test'), false)
+      assert.strictEqual(isUpperCase('Test'), false)
     })
 
     it('should handle false positives and return false', function () {
-      assert.equal(isUpperCase('1'), false)
-      assert.equal(isUpperCase(''), false)
+      assert.strictEqual(isUpperCase('1'), false)
+      assert.strictEqual(isUpperCase(''), false)
     })
   })
 
@@ -43,17 +43,17 @@ describe('isUpperCase()', function () {
     })
 
     it('should return true when the string is upper case', function () {
-      assert.equal(isUpperCase('STRİNG', 'tr'), true)
+      assert.strictEqual(isUpperCase('STRİNG', 'tr'), true)
     })
 
     it('should return false when the string is mixed case', function () {
-      assert.equal(isUpperCase('testi̇', 'tr'), false)
-      assert.equal(isUpperCase('Testi̇', 'tr'), false)
+      assert.strictEqual(isUpperCase('testi̇', 'tr'), false)
+      assert.strictEqual(isUpperCase('Testi̇', 'tr'), false)
     })
 
     it('should handle false positives and return false', function () {
-      assert.equal(isUpperCase('1', 'tr'), false)
-      assert.equal(isUpperCase('', 'tr'), false)
+      assert.strictEqual(isUpperCase('1', 'tr'), false)
+      assert.strictEqual(isUpperCase('', 'tr'), false)
     })
   })
 })
