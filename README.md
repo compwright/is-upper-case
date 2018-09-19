@@ -1,7 +1,6 @@
 # @compwright/is-upper-case
 
 [![Build status][travis-image]][travis-url]
-[![Test coverage][coveralls-image]][coveralls-url]
 
 Check if a string is uppercase.
 
@@ -42,5 +41,3 @@ MIT
 
 [travis-image]: https://img.shields.io/travis/compwright/is-upper-case.svg?style=flat
 [travis-url]: https://travis-ci.org/compwright/is-upper-case
-[coveralls-image]: https://img.shields.io/coveralls/compwright/is-upper-case.svg?style=flat
-[coveralls-url]: https://coveralls.io/r/compwright/is-upper-case?branch=master
