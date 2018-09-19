@@ -37,6 +37,9 @@
     "email": "hello@blakeembrey.com",
     "url": "http://blakeembrey.me"
   },
+  "contributors": [
+    "Jonathon Hill <jhill9693@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/blakeembrey/is-upper-case/issues"
@@ -47,8 +50,5 @@
     "mocha": "^3.3.0",
     "pre-commit": "^1.0.2",
     "standard": "^10.0.2"
-  },
-  "dependencies": {
-    "upper-case": "^1.1.0"
   }
 }

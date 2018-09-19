@@ -1,5 +1,3 @@
-var upperCase = require('upper-case')
-
 /**
  * Check if a string is upper case.
  *
@@ -8,5 +6,15 @@ var upperCase = require('upper-case')
  * @return {Boolean}
  */
 module.exports = function (string, locale) {
-  return upperCase(string, locale) === string
+  if (typeof string !== 'string') {
+    return
+  }
+
+  return locale ? (
+    string.toLocaleUpperCase(locale) === string &&
+    string.toLocaleLowerCase(locale) !== string
+  ) : (
+    string.toUpperCase() === string &&
+    string.toLowerCase() !== string
+  )
 }
