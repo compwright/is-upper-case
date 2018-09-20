@@ -4,16 +4,9 @@ var isUpperCase = require('./')
 
 describe('isUpperCase()', function () {
   describe('without locale', function () {
-    it('should return undefined if not a string', function () {
-      assert.strictEqual(isUpperCase(), undefined)
-      assert.strictEqual(isUpperCase(1.0), undefined)
-      assert.strictEqual(isUpperCase(0), undefined)
-      assert.strictEqual(isUpperCase(true), undefined)
-      assert.strictEqual(isUpperCase(false), undefined)
-      assert.strictEqual(isUpperCase(null), undefined)
-      assert.strictEqual(isUpperCase([]), undefined)
-      assert.strictEqual(isUpperCase({}), undefined)
-    })
+    it('should throw a TypeError if not a string', function () {
+      assert.throws(isUpperCase.bind(null, 100))
+    }, { name: 'TypeError' })
 
     it('should return true when the string is upper case', function () {
       assert.strictEqual(isUpperCase('TEST'), true)
@@ -31,16 +24,9 @@ describe('isUpperCase()', function () {
   })
 
   describe('with locale', function () {
-    it('should return undefined if not a string', function () {
-      assert.strictEqual(isUpperCase(undefined, 'tr'), undefined)
-      assert.strictEqual(isUpperCase(1.0, 'tr'), undefined)
-      assert.strictEqual(isUpperCase(0, 'tr'), undefined)
-      assert.strictEqual(isUpperCase(true, 'tr'), undefined)
-      assert.strictEqual(isUpperCase(false, 'tr'), undefined)
-      assert.strictEqual(isUpperCase(null, 'tr'), undefined)
-      assert.strictEqual(isUpperCase([], 'tr'), undefined)
-      assert.strictEqual(isUpperCase({}, 'tr'), undefined)
-    })
+    it('should throw a TypeError if not a string', function () {
+      assert.throws(isUpperCase.bind(null, 100, 'tr'))
+    }, { name: 'TypeError' })
 
     it('should return true when the string is upper case', function () {
       assert.strictEqual(isUpperCase('STRİNG', 'tr'), true)

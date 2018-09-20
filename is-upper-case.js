@@ -6,10 +6,6 @@
  * @return {Boolean}
  */
 module.exports = function (string, locale) {
-  if (typeof string !== 'string') {
-    return
-  }
-
   return locale ? (
     string.toLocaleUpperCase(locale) === string &&
     string.toLocaleLowerCase(locale) !== string
