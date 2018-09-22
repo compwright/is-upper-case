@@ -1,5 +1,7 @@
 # @compwright/is-upper-case
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/compwright/is-upper-case.svg)](https://greenkeeper.io/)
+
 [![Build status][travis-image]][travis-url]
 
 Check if a string is uppercase.
