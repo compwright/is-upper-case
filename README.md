@@ -1,8 +1,13 @@
 # @compwright/is-upper-case
 
-[![Build status][travis-image]][travis-url]
+[![Build status][travis-image]][travis-url] [![Greenkeeper badge](https://badges.greenkeeper.io/compwright/is-upper-case.svg)](https://greenkeeper.io/)
 
-Check if a string is uppercase.
+Check if a string is upper case.
+
+Forked from [blakeembrey/is-upper-case](https://github.com/blakeembrey/is-upper-case), with the following improvements:
+
+* Removed unnecessary dependencies
+* Added locale support
 
 ## Installation
 
@@ -13,7 +18,7 @@ npm install @compwright/is-upper-case --save
 ## Usage
 
 ```javascript
-const isUpperCase = require('is-upper-case')
+const isUpperCase = require('@compwright/is-upper-case')
 
 isUpperCase('STRING') // true
 isUpperCase('String') // false
@@ -26,8 +31,6 @@ isUpperCase(null) // undefined
 Locale support:
 
 ```javascript
-const isUpperCase = require('is-upper-case')
-
 isUpperCase('STRİNG', 'tr') // true
 ```
 
