@@ -10,8 +10,9 @@
     "LICENSE"
   ],
   "scripts": {
-    "pretest": "standard --fix",
-    "test": "mocha"
+    "lint": "standard",
+    "test": "mocha -R spec --bail",
+    "pretest": "npm run lint"
   },
   "standard": {
     "ignore": [
@@ -32,23 +33,16 @@
   ],
   "author": {
     "name": "Jonathon Hill",
-    "email": "jhill9693@gmail.com"
+    "email": "jonathon@compwright.com",
+    "url": "http://compwright.com"
   },
-  "contributors": [
-    {
-      "name": "Blake Embrey",
-      "email": "hello@blakeembrey.com"
-    }
-  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/compwright/is-upper-case/issues"
   },
   "homepage": "https://github.com/compwright/is-upper-case",
   "devDependencies": {
-    "istanbul": "^0.4.5",
-    "mocha": "^5.2.0",
-    "pre-commit": "^1.0.2",
-    "standard": "^12.0.1"
+    "mocha": "^6.2.0",
+    "standard": "^14.1.0"
   }
 }
