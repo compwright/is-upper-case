@@ -1,7 +1,7 @@
 {
   "name": "@compwright/is-upper-case",
   "version": "2.0.4",
-  "description": "Check if a string is upper cased",
+  "description": "Fork of is-upper-case with added locale support",
   "main": "is-upper-case.js",
   "typings": "is-upper-case.d.ts",
   "files": [
@@ -10,9 +10,8 @@
     "LICENSE"
   ],
   "scripts": {
-    "lint": "standard",
-    "test": "mocha -R spec --bail",
-    "pretest": "npm run lint"
+    "pretest": "standard",
+    "test": "mocha -R spec --bail"
   },
   "standard": {
     "ignore": [
@@ -29,7 +28,9 @@
     "cases",
     "upper",
     "uppercase",
-    "check"
+    "check",
+    "is-upper-case",
+    "string"
   ],
   "author": {
     "name": "Jonathon Hill",
