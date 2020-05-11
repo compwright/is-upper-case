@@ -44,6 +44,6 @@
   "homepage": "https://github.com/compwright/is-upper-case",
   "devDependencies": {
     "mocha": "^7.1.0",
-    "standard": "^14.1.0"
+    "standard": "^14.3.4"
   }
 }
