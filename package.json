@@ -1,6 +1,6 @@
 {
   "name": "@compwright/is-upper-case",
-  "version": "2.0.5",
+  "version": "2.1.0",
   "description": "Fork of is-upper-case with added locale support",
   "main": "is-upper-case.js",
   "typings": "is-upper-case.d.ts",
