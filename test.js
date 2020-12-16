@@ -1,6 +1,6 @@
 /* global describe, it */
-var assert = require('assert')
-var isUpperCase = require('./')
+const assert = require('assert')
+const isUpperCase = require('./')
 
 describe('isUpperCase()', function () {
   describe('without locale', function () {

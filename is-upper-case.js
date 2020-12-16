@@ -10,11 +10,7 @@ module.exports = function (string, locale) {
     return
   }
 
-  return locale ? (
-    string.toLocaleUpperCase(locale) === string &&
-    string.toLocaleLowerCase(locale) !== string
-  ) : (
-    string.toUpperCase() === string &&
-    string.toLowerCase() !== string
-  )
+  return locale
+    ? string.toLocaleUpperCase(locale) === string && string.toLocaleLowerCase(locale) !== string
+    : string.toUpperCase() === string && string.toLowerCase() !== string
 }

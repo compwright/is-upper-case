@@ -10,14 +10,13 @@
     "LICENSE"
   ],
   "scripts": {
-    "pretest": "standard",
+    "pretest": "standard --fix",
     "test": "mocha -R spec --bail"
   },
   "standard": {
     "ignore": [
       "coverage/**",
-      "node_modules/**",
-      "bower_components/**"
+      "node_modules/**"
     ]
   },
   "repository": {
@@ -43,7 +42,7 @@
   },
   "homepage": "https://github.com/compwright/is-upper-case",
   "devDependencies": {
-    "mocha": "^7.1.0",
-    "standard": "^14.1.0"
+    "mocha": "^8.2.0",
+    "standard": "^16.0.3"
   }
 }
